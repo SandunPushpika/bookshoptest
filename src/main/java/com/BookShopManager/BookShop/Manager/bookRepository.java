@@ -105,7 +105,12 @@ public class bookRepository {
     }
 
     public List findbyId(int BookID){
-        return jdbc.queryForList("Select * from books where BookID="+BookID+"");
+        if(BookID!=0){
+            return jdbc.queryForList("Select * from books where BookID="+BookID+"");
+        }else{
+            return null;
+        }
+
 
     }
 
