@@ -18,6 +18,11 @@ public class Controller {
     @Autowired
     bookRepository repository;
 
+    @RequestMapping(value = "/")
+    public String index() {
+        return "index.html";
+    }
+
     @GetMapping("/allbooknames")
     public List<String> BookNames(){
         return repository.getAllBookNames();
