@@ -19,8 +19,6 @@ public class Controller {
     @Autowired
     bookRepository repository;
 
-
-
     @GetMapping("/allbooknames")
     public List<String> BookNames(){
         return repository.getAllBookNames();
