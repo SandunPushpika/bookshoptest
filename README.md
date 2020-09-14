@@ -8,6 +8,9 @@ Posible to update anytime,
 Sell books,
 See all the profits. (Ability to see by date or month or year)
 
+# REFRESH TABLES
+clear the table and press find
+
 # LIVE LINK to this deployed project
 https://bookshopmanager.herokuapp.com/
 
